@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Award, Users, GraduationCap, Building, Calendar, MapPin } from 'lucide-react';
 import { useTheme } from './ThemeProvider';
+import FaiyazImg from '../assets/images/faiyaz.webp';
 
 export const FaiyazAhmad: React.FC = () => {
   const { currentTheme } = useTheme();
@@ -129,7 +130,7 @@ export const FaiyazAhmad: React.FC = () => {
             >
               <div className="aspect-[4/5] relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://images.pexels.com/photos/5668473/pexels-photo-5668473.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  src={FaiyazImg}
                   alt="Dr. Faiyaz Ahmad"
                   className="w-full h-full object-cover"
                 />

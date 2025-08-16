@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Users, GraduationCap, Heart } from 'lucide-react';
 import { useTheme } from './ThemeProvider';
+import HeroImg from '../assets/images/hero.webp';
 
 export const Hero: React.FC = () => {
   const { currentTheme } = useTheme();
@@ -148,7 +149,7 @@ export const Hero: React.FC = () => {
               className="aspect-square lg:aspect-[4/5] relative rounded-2xl overflow-hidden shadow-2xl"
             >
               <img
-                src="https://images.pexels.com/photos/6646918/pexels-photo-6646918.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src={HeroImg}
                 alt="Foundation work - helping communities"
                 className="w-full h-full object-cover"
               />
