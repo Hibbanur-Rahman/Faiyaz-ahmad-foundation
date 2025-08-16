@@ -51,7 +51,7 @@ export const About: React.FC = () => {
   };
 
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className={`py-20 ${currentTheme.colors.background}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial="hidden"
@@ -65,14 +65,14 @@ export const About: React.FC = () => {
             <motion.div variants={itemVariants} className="space-y-6">
               <motion.div
                 variants={itemVariants}
-                className={`inline-flex items-center px-4 py-2 ${currentTheme.colors.secondary} ${currentTheme.colors.textLight} rounded-full text-sm font-medium`}
+                className={`inline-flex items-center px-4 py-2 ${currentTheme.colors.secondary} ${currentTheme.colors.text} rounded-full text-sm font-medium`}
               >
                 About Our Foundation
               </motion.div>
               
               <motion.h2
                 variants={itemVariants}
-                className="text-3xl lg:text-4xl font-bold text-gray-900"
+                className={`text-3xl lg:text-4xl font-bold ${currentTheme.colors.text}`}
               >
                 Transforming Lives Through 
                 <motion.span
@@ -83,7 +83,7 @@ export const About: React.FC = () => {
                 </motion.span>
               </motion.h2>
               
-              <motion.div variants={itemVariants} className="space-y-4 text-gray-600">
+              <motion.div variants={itemVariants} className={`space-y-4 ${currentTheme.colors.textLight}`}>
                 <motion.p variants={itemVariants} className="text-lg leading-relaxed">
                   The Faiyaz Ahmad Foundation stands as a beacon of hope for marginalized communities, 
                   focusing primarily on education and healthcare. Our mission is to break the barriers 
@@ -110,8 +110,8 @@ export const About: React.FC = () => {
               variants={itemVariants}
               className={`p-6 ${currentTheme.colors.primaryLight} rounded-xl ${currentTheme.colors.border} border`}
             >
-              <h3 className="text-xl font-bold text-gray-900 mb-3">About Our Founder</h3>
-              <div className="space-y-2 text-gray-700">
+              <h3 className={`text-xl font-bold ${currentTheme.colors.text} mb-3`}>About Our Founder</h3>
+              <div className={`space-y-2 ${currentTheme.colors.textLight}`}>
                 <p><strong>Dr. Faiyaz Ahmad</strong> - Member of Rajya Sabha (2022-present)</p>
                 <p>Former MLA, Bisfi Constituency, Bihar (2010-2020)</p>
                 <p>Founder & Chairman, Madhubani Medical College</p>

@@ -50,7 +50,7 @@ export const Contact: React.FC = () => {
             </span>
           </h2>
           
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-600 dark:text-white max-w-3xl mx-auto">
             Whether you want to volunteer, donate, partner with us, or learn more about our services, 
             we're here to help. Reach out to us through any of the channels below.
           </p>

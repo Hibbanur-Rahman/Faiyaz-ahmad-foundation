@@ -135,7 +135,7 @@ export const Gallery: React.FC = () => {
           
           <motion.p
             variants={itemVariants}
-            className="text-lg text-gray-600 max-w-3xl mx-auto"
+            className="text-lg text-gray-600 dark:text-white max-w-3xl mx-auto"
           >
             Witness the transformative impact of our work through these moments captured 
             across our educational institutions, healthcare facilities, and community programs.

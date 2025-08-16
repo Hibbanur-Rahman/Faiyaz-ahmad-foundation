@@ -45,7 +45,7 @@ export const Hero: React.FC = () => {
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.6, duration: 0.5 }}
-                className={`inline-flex items-center px-4 py-2 ${currentTheme.colors.secondary} ${currentTheme.colors.textLight} rounded-full text-sm font-medium`}
+                className={`inline-flex items-center px-4 py-2 ${currentTheme.colors.secondary} text-white rounded-full text-sm font-medium`}
               >
                 <Heart className="w-4 h-4 mr-2" />
                 Serving Humanity Since 2010
@@ -55,7 +55,7 @@ export const Hero: React.FC = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.8, duration: 0.8 }}
-                className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight"
+                className="text-4xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-tight"
               >
                 Empowering Lives Through
                 <motion.span
@@ -72,7 +72,7 @@ export const Hero: React.FC = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 1.4, duration: 0.6 }}
-                className="text-lg text-gray-600 leading-relaxed max-w-xl"
+                className="text-lg text-gray-600 dark:text-white/80 leading-relaxed max-w-xl"
               >
                 The Faiyaz Ahmad Foundation is dedicated to uplifting marginalized communities 
                 through quality education and accessible healthcare services across Bihar and beyond.
@@ -127,8 +127,8 @@ export const Hero: React.FC = () => {
                       <stat.icon className={`w-5 h-5 ${currentTheme.colors.textLight}`} />
                     </div>
                   </div>
-                  <div className="text-2xl font-bold text-gray-900">{stat.value}</div>
-                  <div className="text-sm text-gray-600">{stat.label}</div>
+                  <div className="text-2xl font-bold text-gray-900 dark:text-white">{stat.value}</div>
+                  <div className="text-sm text-gray-600 dark:text-white">{stat.label}</div>
                 </motion.div>
               ))}
             </motion.div>

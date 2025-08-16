@@ -1,5 +1,5 @@
 import React from 'react';
-import { ThemeProvider } from './components/ThemeProvider';
+import { ThemeProvider, useTheme } from './components/ThemeProvider';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { About } from './components/About';
@@ -10,22 +10,30 @@ import { Volunteer } from './components/Volunteer';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 
+const AppContent: React.FC = () => {
+  const { currentTheme } = useTheme();
+  
+  return (
+    <div className={`min-h-screen ${currentTheme.colors.background}`}>
+      <Header />
+      <main>
+        <Hero />
+        <About />
+        <FaiyazAhmad />
+        <Services />
+        <Gallery />
+        <Volunteer />
+        <Contact />
+      </main>
+      <Footer />
+    </div>
+  );
+};
+
 function App() {
   return (
     <ThemeProvider>
-      <div className="min-h-screen bg-white">
-        <Header />
-        <main>
-          <Hero />
-          <About />
-          <FaiyazAhmad />
-          <Services />
-          <Gallery />
-          <Volunteer />
-          <Contact />
-        </main>
-        <Footer />
-      </div>
+      <AppContent />
     </ThemeProvider>
   );
 }
